@@ -31,7 +31,7 @@ function GameScene:playerFlyToScene()
 		--开始游戏
 	end
 
-	local animation = display.getAnimation("flying")
+	local animation = display.getAnimationCache("flying")
 	transition.playAnimationForever(self.player, animation)
 
 	local action = transition.sequence({
@@ -41,7 +41,6 @@ function GameScene:playerFlyToScene()
 		})
 	self.player:runAction(action)
 end
-
 function GameScene:onEnter()
 	-- body
 end

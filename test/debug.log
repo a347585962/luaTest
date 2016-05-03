@@ -1,10 +1,10 @@
 
 {
 	gl.supports_vertex_array_object: true
-	cocos2d.x.version: Quick-Cocos2dx-Community 3.6
-	gl.vendor: Intel
+	cocos2d.x.version: Quick-Cocos2dx-Community 3.6.1 Release
+	gl.vendor: Intel Inc.
 	gl.supports_PVRTC: false
-	gl.renderer: Intel(R) Iris(TM) Graphics 6100
+	gl.renderer: Intel Iris OpenGL Engine
 	cocos2d.x.compiled_with_profiler: false
 	gl.max_texture_size: 16384
 	gl.supports_ETC1: false
@@ -13,7 +13,7 @@
 	gl.supports_discard_framebuffer: false
 	gl.supports_NPOT: true
 	gl.supports_S3TC: true
-	gl.version: 2.1 INTEL-10.6.31
+	gl.version: 2.1 INTEL-10.6.33
 	gl.supports_ATITC: false
 	gl.max_texture_units: 16
 	cocos2d.x.compiled_with_gl_state_cache: true
@@ -22,7 +22,7 @@
 
 Quick-Cocos2dx-Community C++ support ready.
 ------------------------------------------------
-LOAD LUA FILE: /Users/wusonglin/Documents/lua/project/test/src/main.lua
+LOAD LUA FILE: /Users/wusonglin1/Documents/luaTest/test/src/main.lua
 ------------------------------------------------
 [LUA-print] ===========================================================
 [LUA-print]               LOAD QUICK FRAMEWORK
@@ -33,7 +33,7 @@ LOAD LUA FILE: /Users/wusonglin/Documents/lua/project/test/src/main.lua
 [LUA-print] [INFO] # device.platform              = mac
 [LUA-print] [INFO] # device.model                 = unknown
 [LUA-print] [INFO] # device.language              = cn
-[LUA-print] [INFO] # device.writablePath          = /Users/wusonglin/Documents/lua/project/test/
+[LUA-print] [INFO] # device.writablePath          = /Users/wusonglin1/Documents/luaTest/test/
 [LUA-print] [INFO] # device.directorySeparator    = /
 [LUA-print] [INFO] # device.pathSeparator         = :
 [LUA-print] [INFO] #
@@ -63,16 +63,4 @@ libpng warning: iCCP: known incorrect sRGB profile
 [LUA-print] start
 libpng warning: iCCP: known incorrect sRGB profile
 libpng warning: iCCP: known incorrect sRGB profile
-[LUA-print] ----------------------------------------
-[LUA-print] LUA ERROR: [string "/Users/wusonglin/Documents/lua/project/test/s..."]:18: attempt to index global 'Player' (a nil value)
-
-[LUA-print] 
-stack traceback:
-	[string "/Users/wusonglin/Documents/lua/project/test/s..."]:18: in function 'ctor'
-	[string "framework/functions.lua"]:315: in function 'new'
-	[string "framework/cc/mvc/AppBase.lua"]:40: in function 'enterScene'
-	[string "/Users/wusonglin/Documents/lua/project/test/s..."]:38: in function <[string "/Users/wusonglin/Documents/lua/project/test/s..."]:36>
-	[string "framework/cc/components/behavior/EventProtoco..."]:59: in function 'dispatchEvent'
-	[string "framework/cc/ui/UIPushButton.lua"]:124: in function 'listener_'
-	[string "framework/cocos2dx/NodeEx.lua"]:428: in function <[string "framework/cocos2dx/NodeEx.lua"]:382>
-[LUA-print] ----------------------------------------
+[LUA-print] ----class()

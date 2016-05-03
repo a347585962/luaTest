@@ -9,8 +9,7 @@ function BackGroundLayer:ctor()
 
 	self:createBg()
 
-	self:addNodeEventListener(cc.NODE_ENTER_FRAME_EVENT, handler(self, self.scrollBg))
-	self:scheduleUpdate();
+	
 end
 
 function BackGroundLayer:createBg()
@@ -54,6 +53,13 @@ function BackGroundLayer:scrollBg(dt)
 
 	local x5 = self.map:getPositionX() - 130*dt
 	self.map:setPositionX(x5)
+end
+
+function BackGroundLayer:startGame()
+	-- body
+	self:addNodeEventListener(cc.NODE_ENTER_FRAME_EVENT, handler(self, self.scrollBg))
+	self:scheduleUpdate();
+
 end
 
 return BackGroundLayer

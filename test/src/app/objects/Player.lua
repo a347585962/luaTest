@@ -1,14 +1,15 @@
 
-local Player = class("Player", function ()
+Player = class("Player", function ()
 	-- body
 	print("----class()")
 	return display.newSprite("#flying1.png")
+	-- return display.newSprite("image/heart.png")
 end)
 
 function Player:ctor()
 	-- body
 	
-	local body = cc.PhysicsBody:createBox(self:getContentSize(),cc.PHYSICSBODY_MATERAL_DEFAULT,cc.p(0,0))
+	local body = cc.PhysicsBody:createBox(self:getContentSize(),cc.PHYSICSBODY_MATERIAL_DEFAULT,cc.p(0,0))
 	self:setPhysicsBody(body)
 
 	self:addAnimationCache()
